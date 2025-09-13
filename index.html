@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR Image Example</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <!-- AR Scene -->
+    <a-scene embedded arjs>
+      <!-- Marker (Hiro default) -->
+      <a-marker preset="hiro">
+        <!-- Show image when marker detected -->
+        <a-image src="myimage.png" width="2" height="2"></a-image>
+      </a-marker>
+
+      <!-- AR camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
